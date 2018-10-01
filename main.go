@@ -43,7 +43,7 @@ func init() {
 
 func main() {
 	var (
-		port   = flag.String("port", os.Getenv("APP_PORT"), "Port to bind HTTP listener") // TODO(pb): should be -addr, default ":80"
+		port   = flag.String("port", os.Getenv("PORT"), "Port to bind HTTP listener") // TODO(pb): should be -addr, default ":80"
 		images = flag.String("images", "./images/", "Image path")
 		dsn    = flag.String("DSN", os.Getenv("DB_DSN"), "Data Source Name: [username[:password]@][protocol[(address)]]/dbname")
 		zip    = flag.String("zipkin", os.Getenv("ZIPKIN"), "Zipkin address")
